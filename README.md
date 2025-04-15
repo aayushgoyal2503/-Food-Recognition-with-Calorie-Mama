@@ -27,23 +27,38 @@ cd see_food_recognition_with_calorie_mama
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
+    
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
+    
     implementation 'androidx.appcompat:appcompat:1.6.1'
+    
     implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+    
     testImplementation 'junit:junit:4.13.2'
+    
     implementation 'com.squareup.okhttp3:okhttp:4.12.0'
+    
     implementation 'org.json:json:20230227'
+    
     implementation 'com.google.code.gson:gson:2.11.0'
+    
     implementation 'com.google.cloud:google-cloud-vision:3.34.0'
+    
     implementation 'com.google.api-client:google-api-client:2.2.0'
+    
     implementation 'io.grpc:grpc-netty:1.63.0'
+    
     implementation 'org.conscrypt:conscrypt-android:2.5.2'
+    
 }
 
 
 Build and Run:->
 
 Open the project in Android Studio.
+
 Connect an Android device or start an emulator.
+
 Build the project: Build > Rebuild Project.
+
 Run the app: Run > Run 'app'.

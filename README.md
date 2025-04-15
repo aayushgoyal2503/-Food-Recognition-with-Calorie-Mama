@@ -6,36 +6,44 @@
 
 Find out more here at [http://www.caloriemama.ai](http://www.caloriemama.ai)
 
-## Running the example
+Features:->
 
-You need an access token to use our Calorie Mama API. Obtain one by creating a free developer account at [https://developers.caloriemama.ai](https://developers.caloriemama.ai)
+Capture food images using the device camera.
+Detect food items using the Google Cloud Vision API.
+Retrieve nutritional data via the Nutritionix API.
+Display formatted nutritional information in a user-friendly format.
+Handle unsupported food items with fallback messages
 
-Clone the project from GitHub
+Prerequisites:->
 
-```
-git clone https://github.com/azumio/see_food_recognition_with_calorie_mama.git
-```
+Android device or emulator with camera support.
+Internet connection for API calls.
+Google Cloud Vision API credentials (Service Account JSON).
+Nutritionix API credentials (App ID and App Key).
 
-Now import project to Android Studio and create a file under resources: `res/values/secrets.xml`
-```xml
-<resources>
-    <string name="caloriemama_token">YOUR TOKEN HERE</string>
-</resources>
-```
+git clone https://github.com/yourusername/see_food_recognition_with_calorie_mama.git
 
-You can run the app. 
+cd see_food_recognition_with_calorie_mama
 
-If you'd like to use Android Emulator and a WebCam read the next section.
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
+    implementation 'androidx.appcompat:appcompat:1.6.1'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+    testImplementation 'junit:junit:4.13.2'
+    implementation 'com.squareup.okhttp3:okhttp:4.12.0'
+    implementation 'org.json:json:20230227'
+    implementation 'com.google.code.gson:gson:2.11.0'
+    implementation 'com.google.cloud:google-cloud-vision:3.34.0'
+    implementation 'com.google.api-client:google-api-client:2.2.0'
+    implementation 'io.grpc:grpc-netty:1.63.0'
+    implementation 'org.conscrypt:conscrypt-android:2.5.2'
+}
 
-### End Result
 
-![end result](https://storage.googleapis.com/rendulic_public_images/food_recognition_example.png "End Result")
+Build and Run:->
 
-## Setup Android Studio to use a WebCam
-
-1. Tools -> Android -> AVD Manager
-2. Create AVD if it doesn't exist or edit existing
-3. Show advanced settings
-4. In Camera section select from dropdown Webcam0
-5. Restart Emulator if needed
-
+Open the project in Android Studio.
+Connect an Android device or start an emulator.
+Build the project: Build > Rebuild Project.
+Run the app: Run > Run 'app'.

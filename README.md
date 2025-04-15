@@ -9,16 +9,23 @@ Find out more here at [http://www.caloriemama.ai](http://www.caloriemama.ai)
 Features:->
 
 Capture food images using the device camera.
+
 Detect food items using the Google Cloud Vision API.
+
 Retrieve nutritional data via the Nutritionix API.
+
 Display formatted nutritional information in a user-friendly format.
+
 Handle unsupported food items with fallback messages
 
 Prerequisites:->
 
 Android device or emulator with camera support.
+
 Internet connection for API calls.
+
 Google Cloud Vision API credentials (Service Account JSON).
+
 Nutritionix API credentials (App ID and App Key).
 
 git clone https://github.com/yourusername/see_food_recognition_with_calorie_mama.git
